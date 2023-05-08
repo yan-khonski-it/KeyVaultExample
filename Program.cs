@@ -2,9 +2,9 @@
 
 class Program
 {
-    static void Main()
+    static async Task Main()
     {
         KeyVaultSimpleExample keyVaultSimpleExample = new KeyVaultSimpleExample();
-        keyVaultSimpleExample.run();
+        await keyVaultSimpleExample.run();
     }
 }
