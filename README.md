@@ -1,4 +1,37 @@
 A simple program that reads secrets from Azure Key Vault using the Azure.Identity library.
+Run `Program.cs` to see it in action.
+You may want to initialization the key vault with values. Uncomment the code that populates the keyVault and set `enabled=true`.
+
+
+# Run it as Azure Powershell CLI.
+Make sure that Azure PowerShell is selected. Login using `az login`.
+
+This will select all the secrets:
+```powershell
+Get-AzKeyVaultSecret -VaultName "learning-keyvault2"
+```
+
+Secrets that have a pattern name
+```powershell
+Get-AzKeyVaultSecret -VaultName "learning-keyvault2" -Name '*super*'
+```
+
+To select a specific secret:
+```powershell
+Get-AzKeyVaultSecret -VaultName "learning-keyvault2" -Name 'Secret1'
+```
+
+
+To see the value
+```powershell
+Get-AzKeyVaultSecret -VaultName "learning-keyvault2" -Name 'Secret1' -AsPlainText
+```
+
+Alternatively, you can see the value:
+```powershell
+az keyvault secret show --name "Secret1" --vault-name "learning-keyvault2" --query "value"
+```
+
 
 # Authentication
 
