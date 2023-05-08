@@ -5,6 +5,6 @@ class Program
     static async Task Main()
     {
         KeyVaultSimpleExample keyVaultSimpleExample = new KeyVaultSimpleExample();
-        await keyVaultSimpleExample.run();
+        await keyVaultSimpleExample.RunKeyVaultExample();
     }
 }

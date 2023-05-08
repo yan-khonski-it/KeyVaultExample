@@ -4,9 +4,9 @@ using Azure.Security.KeyVault.Secrets;
 namespace yan.learning.KeyVaultExample;
 public class KeyVaultSimpleExample
 {
-    public async Task run()
+    public async Task RunKeyVaultExample()
     {
-        string keyVaultName = Environment.GetEnvironmentVariable("KEY_VAULT_NAME");
+        string keyVaultName = Environment.GetEnvironmentVariable("KEY_VAULT_NAME") ?? throw new Exception("KEY_VAULT_NAME environment variable is not defined.");
         Console.WriteLine($"keyVaultName: {keyVaultName}");
         var kvUri = "https://" + keyVaultName + ".vault.azure.net";
 
