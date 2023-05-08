@@ -15,7 +15,15 @@ Go to Azure Active Directory -> App registrations -> New registration.
 Redirect URI can be empty.
 
 Add secret to your application.
+![Secret screen](./documents/application_secret.png "application_secret.png")
+
 Copy the secret value to enviromet variable `AZURE_CLIENT_SECRET`.
+
+> [WARN] Do not leave that screen yet, copy the secret into environment variable `AZURE_CLIENT_SECRET`.
+After you leave the secret page, you won't be able to copy its value, so you will have to create a new secret.
+
+Check app credentials to set up the local environment variables.
+![Environment variuables screen](./documents/app_credentials.png "app_credentials.png")
 
 You need to setup environment variables:
 ```
