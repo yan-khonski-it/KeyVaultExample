@@ -7,12 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyVaultExample", "KeyVault
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74A8D2A3-6095-498A-A9E7-F12BC354319F}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Users\Yan\Pictures\Screenshots\env_variables.png = ..\..\..\..\Users\Yan\Pictures\Screenshots\env_variables.png
 		README.md = README.md
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documents", "documents", "{A7A5D8E9-5D61-4AB6-872E-9C633B591152}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Users\Yan\Pictures\Screenshots\env variables.png = ..\..\..\..\Users\Yan\Pictures\Screenshots\env variables.png
 	EndProjectSection
 EndProject
 Global
