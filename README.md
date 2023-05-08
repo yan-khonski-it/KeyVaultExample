@@ -2,16 +2,16 @@ https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-net?tabs=
 
 A simple program that reads secrets from Azure Key Vault using the Azure.Identity library.
 
+We use `new DefaultAzureCredential()` to authenticate the app to Azure Key Vault.
+https://learn.microsoft.com/en-us/java/api/com.azure.identity.defaultazurecredential?view=azure-java-stable
 
+Under the hood, it uses [EnvironmentCredential](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.environmentcredential?view=azure-dotnet).
 
+You need to setup environment variables:
+```
+AZURE_TENANT_ID
+AZURE_CLIENT_ID
+AZURE_CLIENT_SECRET
+```
 
-https://learn.microsoft.com/en-us/azure/key-vault/general/tutorial-net-create-vault-azure-web-app?tryIt=true&source=docs#code-try-13
-
-How to create authentication for app, so it can connect to Azure resources
-https://learn.microsoft.com/en-us/dotnet/azure/sdk/authentication?tabs=command-line
-
-
-
-
-To authentiucate the app, use Azure CLI.
-https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli
+![Environment variuables screen](./documents/env_variables.png "env_variables.png")
